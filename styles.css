@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body{
+    font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin-bottom: 1rem;
+}
+
+
+.card-component{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+h1{
+    margin-bottom: 2.5rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+    font-size: 15.5px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.mockups{
+    width: 100%;
+}
+
+button{
+    padding: 10px 50px;
+    border: none;
+    font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--Violet);
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 3px hsla(0, 0%, 0%, 0.25);
+}
+
+button:hover{
+    color: white;
+    background-color: var(--SoftMagenta);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fa-brands{
+    border: 1px white solid;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.fa-facebook, .fa-twitter{
+    margin-right: 1rem;
+}
+
+.fa-twitter:hover{
+    color: var(--SoftMagenta);
+    cursor: pointer;
+    border: 1px var(--SoftMagenta) solid;
+    transition: ease-in-out 0.2s;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(149, 251, 251); 
+    transition: ease-in-out 0.2s;
+}
+
+
+/* DESKTOP VIEW*/
+@media (min-width: 500px) {
+    body{
+        background-color: var(--Violet);
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    main{
+        width: 1200px;
+    }
+
+    .left{
+        width: 70%;
+    }
+    
+    .right{
+        width: 50%;
+        font-size: 17px;
+        padding: 2.5rem 2rem;
+    }
+
+    .logo{
+        width: 200px;
+        margin-bottom: 3%;
+    }
+
+    button{
+        border-radius: 20px;
+    }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 500px) {
+    body{
+        background-color: var(--Violet);
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    main{
+        width: 370px;
+        padding: 1rem;
+        
+    }
+
+    main, body, .card-component, .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        width: 150px;
+        margin-bottom: 5rem;
+        align-self: flex-start;
+    }
+
+    .card-component{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        width: 100%;
+    }
+    
+    .right{
+        width: 100%;
+        font-size: 17px;
+        padding: 2.5rem 0px;
+    }
+
+    h1, p{
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 1rem;
+        font-size: 25px;
+        padding: 0px 1rem;
+    }
+
+    p{
+        font-size: 18px;
+        margin-top: -0.5rem;
+        line-height: 1.8rem;
+    }
+
+    button{
+        border-radius: 20px;
+        padding: 1rem 5rem;
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .attribution{
+        font-size: 8px;
+    }
+}
