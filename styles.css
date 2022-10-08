@@ -53,8 +53,8 @@ button{
     border: none;
     font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
     color: var(--Violet);
-    font-weight: 600;
     box-shadow: 0px 0px 10px 3px hsla(0, 0%, 0%, 0.25);
+    background-color: white;
 }
 
 button:hover{
